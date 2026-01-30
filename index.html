@@ -176,7 +176,6 @@ function startScene() {
     if(blown) return;
     blown = true;
     
-    // Müzik 50. saniyeden başlıyor
     music.currentTime = 50;
     music.volume = 0.3;
     music.play().catch(e => console.log("Müzik hatası:", e));
@@ -200,7 +199,8 @@ function showSequence() {
             
             setTimeout(() => {
                 finalText.style.opacity = "1";
-                typeWriter("İyi ki yanındayım, iyi ki varsın Melis... ❤️", () => {
+                // DÜZELTİLEN KISIM:
+                typeWriter("İyi ki yanımdasın, iyi ki varsın Melis... ❤️", () => {
                     setTimeout(() => {
                         finalText.style.opacity = "0";
                         
